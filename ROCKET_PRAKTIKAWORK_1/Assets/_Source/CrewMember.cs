@@ -37,6 +37,11 @@ public class CrewMember : MonoBehaviour
         {
             MoveYes();
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            MoveNo();
+        }
     }
 
     void UpdateData()
@@ -57,7 +62,7 @@ public class CrewMember : MonoBehaviour
 
     public void MoveNo()
     {
-
+        animator.SetInteger("ChangeAnim", 3);
     }
 
     public void MoveCame()
