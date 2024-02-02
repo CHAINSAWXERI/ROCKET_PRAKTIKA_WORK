@@ -6,13 +6,10 @@ using UnityEngine.UI;
 
 public class CrewMember : MonoBehaviour
 {
-    [SerializeField] public TMP_Text text_replica;
-    [SerializeField] public Slider dp_slider;
-    [SerializeField] public Slider cp_slider;
-    [SerializeField] public Slider qp_slider;
-    [SerializeField] public Slider hp_slider;
-
-    [SerializeField] public List<CharacterData> characterDatas = new List<CharacterData>();
+    [SerializeField] public Boostrapper _boostrapper;
+    private TMP_Text text_replica;
+    private Rocket_Stats rocket;
+    private List<CharacterData> characterDatas = new List<CharacterData>(); 
     //type character
     public int dp { get; private set; }
     public int cp { get; private set; }
@@ -23,31 +20,24 @@ public class CrewMember : MonoBehaviour
 
     void Start()
     {
+        text_replica = _boostrapper.text_replica;
+        rocket = _boostrapper.rocket;
+        for (int i = 0; i < _boostrapper.characterDatas.Count; i++)
+        {
+            characterDatas.Add(_boostrapper.characterDatas[i]);
+        }
         animator = GetComponent<Animator>();
+        MoveCame();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            MoveCame();
-        }
 
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            MoveYes();
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            MoveNo();
-        }
     }
 
     void UpdateData()
     {
-        int x;
-        x = Random.Range(0, characterDatas.Count - 1);
+        int x = Random.Range(0, characterDatas.Count - 1);
         dp = characterDatas[x].dp;
         cp = characterDatas[x].cp;
         qp = characterDatas[x].qp;
@@ -57,25 +47,27 @@ public class CrewMember : MonoBehaviour
 
     public void MoveYes()
     {
+        rocket.dp += dp;
+        rocket.qp += qp;
+        rocket.cp += cp;
+        rocket.hp += hp;
         animator.SetInteger("ChangeAnim", 2);
+        //MoveCame();
     }
 
     public void MoveNo()
     {
+        rocket.dp -= dp;
+        rocket.qp -= qp;
+        rocket.cp -= cp;
+        rocket.hp -= hp;
         animator.SetInteger("ChangeAnim", 3);
+        //MoveCame();
     }
 
     public void MoveCame()
     {
+        UpdateData();
         animator.SetInteger("ChangeAnim", 1);
     }
 }
-/*
- * public float speed = 1.0f; // скорость перемещения
-
-    void Update()
-    {
-        transform.Translate(Vector2.right  \*  speed  \*  Time.deltaTime); // перемещение по оси X в 2D пространстве
-    }
- */
-// -10.82
