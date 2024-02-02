@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 204821564}
-  GameOverScreen: {fileID: 114526251}
+  GameOverScreen: {fileID: 154927229}
 --- !u!4 &114526253
 Transform:
   m_ObjectHideFlags: 0
@@ -439,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &154927230
 RectTransform:
   m_ObjectHideFlags: 0
