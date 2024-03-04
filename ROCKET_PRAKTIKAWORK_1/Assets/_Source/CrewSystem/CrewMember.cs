@@ -38,10 +38,10 @@ public class CrewMember : MonoBehaviour
     void UpdateData()
     {
         int x = Random.Range(0, characterDatas.Count - 1);
-        dp = characterDatas[x].dp;
-        cp = characterDatas[x].cp;
-        qp = characterDatas[x].qp;
-        hp = characterDatas[x].hp;
+        dp = characterDatas[x].Intelligence;
+        cp = characterDatas[x].Power;
+        qp = characterDatas[x].Culture;
+        hp = characterDatas[x].Money;
         text_replica.text = characterDatas[x].replica;
     }
 

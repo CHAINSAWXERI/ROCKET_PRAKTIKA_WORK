@@ -405,8 +405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3e5980d3f599d4593ab1060264f6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 204821564}
-  GameOverScreen: {fileID: 154927229}
 --- !u!4 &114526253
 Transform:
   m_ObjectHideFlags: 0
@@ -629,7 +627,7 @@ GameObject:
   m_Component:
   - component: {fileID: 204821562}
   - component: {fileID: 204821561}
-  - component: {fileID: 204821564}
+  - component: {fileID: 204821563}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -704,7 +702,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &204821564
+--- !u!114 &204821563
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -717,10 +715,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxValueSlider: 100
-  dp: 50
-  cp: 50
-  qp: 50
-  hp: 50
+  dp: 40
+  cp: 40
+  qp: 40
+  hp: 40
   dp_slider: {fileID: 1085254545}
   cp_slider: {fileID: 95736269}
   qp_slider: {fileID: 1792711200}
@@ -1946,7 +1944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 711242306}
-  - component: {fileID: 711242305}
+  - component: {fileID: 711242307}
   m_Layer: 0
   m_Name: Boostrapper
   m_TagString: Untagged
@@ -1954,31 +1952,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &711242305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711242304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30258292c037cda428e72c9cc4e477ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_replica: {fileID: 1657609766}
-  rocket: {fileID: 204821564}
-  characterDatas:
-  - {fileID: 11400000, guid: 77f5d4dcf554722449e5116b22877f6c, type: 2}
-  - {fileID: 11400000, guid: c56d9dd2b4df1674fb7beac191e72084, type: 2}
-  - {fileID: 11400000, guid: cd92989998917544db961b56d8c0664f, type: 2}
-  - {fileID: 11400000, guid: da9d55e25da873c4c863dd06d7c715d4, type: 2}
-  - {fileID: 11400000, guid: a24cb8653feb6e946b3216e9f741a6f7, type: 2}
-  - {fileID: 11400000, guid: bd00b966a8471ad4c88cf5aa8e338554, type: 2}
-  - {fileID: 11400000, guid: c5b6c2c7f6bf8ac4eb78418a8b878e60, type: 2}
-  - {fileID: 11400000, guid: c6f6c9703d65a1f44934900b4ec198ce, type: 2}
-  - {fileID: 11400000, guid: d1c98d4a32793cc4ab8e669fd9013eb6, type: 2}
-  - {fileID: 11400000, guid: e2f14e39ef3439e468a61f34fcd68836, type: 2}
 --- !u!4 &711242306
 Transform:
   m_ObjectHideFlags: 0
@@ -1994,6 +1967,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711242307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711242304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f03c07d618a9e4f91a9a200d70fb24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_replica: {fileID: 1657609766}
+  rocket: {fileID: 204821563}
+  characterDatas:
+  - {fileID: 11400000, guid: c5b6c2c7f6bf8ac4eb78418a8b878e60, type: 2}
 --- !u!1 &739968972
 GameObject:
   m_ObjectHideFlags: 0
@@ -3780,7 +3769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 391da31f49209e94ba5ba84d9fd7ce9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boostrapper: {fileID: 711242305}
+  _boostrapper: {fileID: 711242307}
   animator: {fileID: 2024256994}
 --- !u!212 &2024256992
 SpriteRenderer:
