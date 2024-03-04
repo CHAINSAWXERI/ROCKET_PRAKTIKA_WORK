@@ -7,8 +7,8 @@ public class CharacterData : ScriptableObject
 {
     [SerializeField] public string replica;
     //type character
-    [SerializeField] public int dp;
-    [SerializeField] public int cp;
-    [SerializeField] public int qp;
-    [SerializeField] public int hp;
+    [SerializeField] public int Intelligence;
+    [SerializeField] public int Power;
+    [SerializeField] public int Culture;
+    [SerializeField] public int Money;
 }
