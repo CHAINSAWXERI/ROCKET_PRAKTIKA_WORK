@@ -9,19 +9,7 @@ public class GameOverLooker : MonoBehaviour
 
     void Update()
     {
-        if (stats.dp <= 0)
-        {
-            GameOverScreen.SetActive(true);
-        }
-        if (stats.cp <= 0)
-        {
-            GameOverScreen.SetActive(true);
-        }
-        if (stats.qp <= 0)
-        {
-            GameOverScreen.SetActive(true);
-        }
-        if (stats.hp <= 0)
+        if ((stats.dp <= 0) | (stats.cp <= 0) | (stats.qp <= 0) | (stats.hp <= 0))
         {
             GameOverScreen.SetActive(true);
         }
