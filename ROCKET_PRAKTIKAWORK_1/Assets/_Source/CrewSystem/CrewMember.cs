@@ -10,7 +10,6 @@ public class CrewMember : MonoBehaviour
     private TMP_Text text_replica;
     private Rocket_Stats rocket;
     private List<CharacterData> characterDatas = new List<CharacterData>(); 
-    //type character
     public int dp { get; private set; }
     public int cp { get; private set; }
     public int qp { get; private set; }
@@ -30,11 +29,6 @@ public class CrewMember : MonoBehaviour
         MoveCame();
     }
 
-    void Update()
-    {
-
-    }
-
     void UpdateData()
     {
         int x = Random.Range(0, characterDatas.Count - 1);
@@ -52,7 +46,6 @@ public class CrewMember : MonoBehaviour
         rocket.cp += cp;
         rocket.hp += hp;
         animator.SetInteger("ChangeAnim", 2);
-        //MoveCame();
     }
 
     public void MoveNo()
@@ -62,7 +55,6 @@ public class CrewMember : MonoBehaviour
         rocket.cp -= cp;
         rocket.hp -= hp;
         animator.SetInteger("ChangeAnim", 3);
-        //MoveCame();
     }
 
     public void MoveCame()
