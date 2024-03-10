@@ -10,10 +10,10 @@ public class CrewMember : MonoBehaviour
     private TMP_Text text_replica;
     private Rocket_Stats rocket;
     private List<CharacterData> characterDatas = new List<CharacterData>(); 
-    public int dp { get; private set; }
-    public int cp { get; private set; }
-    public int qp { get; private set; }
-    public int hp { get; private set; }
+    public int dp { get; private set; } //Уровень интелекта населения.
+    public int cp { get; private set; } //Уровень мощь населения.
+    public int qp { get; private set; } //Уровень культурность населения.
+    public int hp { get; private set; } //Уровень деньги населения.
 
     public Animator animator;
 
