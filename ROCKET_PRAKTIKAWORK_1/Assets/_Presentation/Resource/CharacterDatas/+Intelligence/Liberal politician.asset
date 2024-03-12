@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   replica: "\u042F \u043F\u043E\u0432\u0435\u0434\u0443 \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u043E
     \u0441\u0432\u043E\u0438\u043C\u0438 \u0438\u0434\u0435\u044F\u043C\u0438!"
+  sprite: {fileID: 21300000, guid: 3444b5dca31bfde4ea67f8ac479b38bd, type: 3}
   Intelligence: 0
   Power: 30
   Culture: 10
