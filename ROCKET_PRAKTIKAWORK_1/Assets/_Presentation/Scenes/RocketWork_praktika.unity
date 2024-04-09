@@ -3678,7 +3678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visiblePanel: {fileID: 769420476}
-  triggerPanel: {fileID: 0}
+  triggerPanel: {fileID: 1720366503}
 --- !u!1 &579537165
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,7 +3728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visiblePanel: {fileID: 4339612}
-  triggerPanel: {fileID: 0}
+  triggerPanel: {fileID: 2069719050}
 --- !u!1 &611031911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,7 +3912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visiblePanel: {fileID: 1506953697}
-  triggerPanel: {fileID: 0}
+  triggerPanel: {fileID: 1211984784}
 --- !u!1 &614714709
 GameObject:
   m_ObjectHideFlags: 0
@@ -9876,7 +9876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visiblePanel: {fileID: 634642196}
-  triggerPanel: {fileID: 0}
+  triggerPanel: {fileID: 442457028}
 --- !u!1 &1782797976
 GameObject:
   m_ObjectHideFlags: 0
