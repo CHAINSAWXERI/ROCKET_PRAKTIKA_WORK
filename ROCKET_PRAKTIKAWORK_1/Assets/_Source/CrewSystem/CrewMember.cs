@@ -8,8 +8,8 @@ public class CrewMember : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private TMP_Text NameOfMember;
-    public TMP_Text text_replica;
-    public Rocket_Stats rocket;
+    public TMP_Text text_replica { set; private get; }
+    public Rocket_Stats rocket { set; private get; }
     public List<CharacterData> characterDatas = new List<CharacterData>();
     public List<string> Names = new List<string>();
     public List<string> Surnames = new List<string>();
@@ -20,24 +20,38 @@ public class CrewMember : MonoBehaviour
 
     public Animator animator;
 
+    private int CharacterCounter = 0;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         MoveCame();
     }
 
-    void UpdateData()
+    private void UpdateData()
     {
-        int x = Random.Range(0, characterDatas.Count - 1);
-        int nm = Random.Range(0, Names.Count - 1);
-        int srnm = Random.Range(0, Surnames.Count - 1);
-        NameOfMember.text = Names[nm] + " " + Surnames[srnm];
-        dp = characterDatas[x].Intelligence;
-        cp = characterDatas[x].Power;
-        qp = characterDatas[x].Culture;
-        hp = characterDatas[x].Money;
-        text_replica.text = characterDatas[x].replica;
-        _spriteRenderer.sprite = characterDatas[x].sprite;
+        if (CharacterCounter >= 5)
+        {
+            StartEvent();
+        }
+        else
+        {
+            int x = Random.Range(0, characterDatas.Count - 1);
+            int nm = Random.Range(0, Names.Count - 1);
+            int srnm = Random.Range(0, Surnames.Count - 1);
+            NameOfMember.text = Names[nm] + " " + Surnames[srnm];
+            dp = characterDatas[x].Intelligence;
+            cp = characterDatas[x].Power;
+            qp = characterDatas[x].Culture;
+            hp = characterDatas[x].Money;
+            text_replica.text = characterDatas[x].replica;
+            _spriteRenderer.sprite = characterDatas[x].sprite;
+        }
+    }
+
+    private void StartEvent()
+    {
+
     }
 
     public void MoveYes()
