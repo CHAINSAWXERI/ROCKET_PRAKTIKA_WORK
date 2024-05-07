@@ -18,6 +18,8 @@ public class CrewMember : MonoBehaviour
     public int qp { get; private set; } //Уровень культурность населения.
     public int hp { get; private set; } //Уровень деньги населения.
 
+    public List<CharacterData> eventCharacterDatas = new List<CharacterData>();
+
     public Animator animator;
 
     private int CharacterCounter = 0;
@@ -51,7 +53,14 @@ public class CrewMember : MonoBehaviour
 
     private void StartEvent()
     {
-
+        int x = Random.Range(0, eventCharacterDatas.Count - 1);
+        NameOfMember.text = "?????????????";
+        dp = eventCharacterDatas[x].Intelligence;
+        cp = eventCharacterDatas[x].Power;
+        qp = eventCharacterDatas[x].Culture;
+        hp = eventCharacterDatas[x].Money;
+        text_replica.text = eventCharacterDatas[x].replica;
+        _spriteRenderer.sprite = eventCharacterDatas[x].sprite;
     }
 
     public void MoveYes()

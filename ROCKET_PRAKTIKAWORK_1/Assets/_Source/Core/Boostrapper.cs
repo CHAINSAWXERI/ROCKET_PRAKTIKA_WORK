@@ -9,6 +9,7 @@ public class Boostrapper : MonoBehaviour
     [SerializeField] public CrewMember _crewmember;
     [SerializeField] public Rocket_Stats rocket;
     [SerializeField] public List<CharacterData> characterDatas = new List<CharacterData>();
+    [SerializeField] public List<CharacterData> eventCharacterDatas = new List<CharacterData>();
     [SerializeField] public List<string> Names = new List<string>();
     [SerializeField] public List<string> Surnames = new List<string>();
     private void Start()
@@ -18,6 +19,11 @@ public class Boostrapper : MonoBehaviour
         for (int i = 0; i < characterDatas.Count; i++)
         {
             _crewmember.characterDatas.Add(characterDatas[i]);
+        }
+
+        for (int i = 0; i < characterDatas.Count; i++)
+        {
+            _crewmember.eventCharacterDatas.Add(eventCharacterDatas[i]);
         }
 
         for (int i = 0; i < Names.Count; i++)
