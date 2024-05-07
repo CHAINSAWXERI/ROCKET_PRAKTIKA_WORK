@@ -48,6 +48,7 @@ public class CrewMember : MonoBehaviour
             hp = characterDatas[x].Money;
             text_replica.text = characterDatas[x].replica;
             _spriteRenderer.sprite = characterDatas[x].sprite;
+            CharacterCounter++;
         }
     }
 
@@ -61,6 +62,7 @@ public class CrewMember : MonoBehaviour
         hp = eventCharacterDatas[x].Money;
         text_replica.text = eventCharacterDatas[x].replica;
         _spriteRenderer.sprite = eventCharacterDatas[x].sprite;
+        CharacterCounter = 0;
     }
 
     public void MoveYes()
