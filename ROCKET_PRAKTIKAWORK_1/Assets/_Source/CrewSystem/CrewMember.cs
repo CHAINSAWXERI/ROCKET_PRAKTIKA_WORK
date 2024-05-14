@@ -8,6 +8,7 @@ public class CrewMember : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private TMP_Text NameOfMember;
+    [SerializeField] private Animator animator;
     public TMP_Text text_replica { set; private get; }
     public Rocket_Stats rocket { set; private get; }
     public List<CharacterData> characterDatas = new List<CharacterData>();
@@ -20,13 +21,10 @@ public class CrewMember : MonoBehaviour
 
     public List<CharacterData> eventCharacterDatas = new List<CharacterData>();
 
-    public Animator animator;
-
     private int CharacterCounter = 0;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
         MoveCame();
     }
 
