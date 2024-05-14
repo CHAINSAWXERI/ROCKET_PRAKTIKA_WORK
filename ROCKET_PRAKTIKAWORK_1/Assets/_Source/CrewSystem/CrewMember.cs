@@ -31,7 +31,7 @@ public class CrewMember : MonoBehaviour
     }
     private void UpdateData()
     {
-        if (CharacterCounter >= CharacterCounterTarget)
+        if (CharacterCounter >= 3)
         {
             StartEvent();
         }
