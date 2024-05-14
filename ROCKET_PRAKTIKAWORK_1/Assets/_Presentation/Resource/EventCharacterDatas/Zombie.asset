@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   replica: adjhbaghdsljfgvcx
   sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  Intelligence: 10
-  Power: 10
-  Culture: 10
-  Money: 10
+  Intelligence: -10
+  Power: -10
+  Culture: -10
+  Money: -10

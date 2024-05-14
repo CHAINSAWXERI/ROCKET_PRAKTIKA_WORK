@@ -4874,8 +4874,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b94abf514b920e848af4ff8b5ea21dbb, type: 2}
   eventCharacterDatas:
   - {fileID: 11400000, guid: a3e071acfdb4843b1af07b0a4ae8ec59, type: 2}
-  - {fileID: 11400000, guid: b7e3bb071b28541aa9296b306101c3bb, type: 2}
+  - {fileID: 11400000, guid: a3e071acfdb4843b1af07b0a4ae8ec59, type: 2}
+  - {fileID: 11400000, guid: a3e071acfdb4843b1af07b0a4ae8ec59, type: 2}
   - {fileID: 11400000, guid: 1be995a3f7cd04b16ae7b6929a7444b9, type: 2}
+  - {fileID: 11400000, guid: 1be995a3f7cd04b16ae7b6929a7444b9, type: 2}
+  - {fileID: 11400000, guid: b7e3bb071b28541aa9296b306101c3bb, type: 2}
   Names:
   - John
   - Jane
@@ -12024,11 +12027,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 2024256992}
   NameOfMember: {fileID: 1240114278}
+  animator: {fileID: 2024256994}
   characterDatas: []
   Names: []
   Surnames: []
   eventCharacterDatas: []
-  animator: {fileID: 2024256994}
 --- !u!212 &2024256992
 SpriteRenderer:
   m_ObjectHideFlags: 0
