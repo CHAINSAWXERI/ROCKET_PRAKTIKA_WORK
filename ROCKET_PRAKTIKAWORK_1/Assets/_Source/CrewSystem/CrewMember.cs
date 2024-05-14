@@ -22,15 +22,16 @@ public class CrewMember : MonoBehaviour
     public List<CharacterData> eventCharacterDatas = new List<CharacterData>();
 
     private int CharacterCounter = 0;
+    private int CharacterCounterTarget = 0;
 
     void Start()
     {
+        CharacterCounterTarget = Random.Range(0, 31);
         MoveCame();
     }
-
     private void UpdateData()
     {
-        if (CharacterCounter >= 5)
+        if (CharacterCounter >= CharacterCounterTarget)
         {
             StartEvent();
         }
@@ -39,7 +40,7 @@ public class CrewMember : MonoBehaviour
             int x = Random.Range(0, characterDatas.Count - 1);
             int nm = Random.Range(0, Names.Count - 1);
             int srnm = Random.Range(0, Surnames.Count - 1);
-            NameOfMember.text = Names[nm] + " " + Surnames[srnm];
+            NameOfMember.text = Names[nm] + " " + Surnames[srnm];//
             dp = characterDatas[x].Intelligence;
             cp = characterDatas[x].Power;
             qp = characterDatas[x].Culture;
@@ -83,7 +84,7 @@ public class CrewMember : MonoBehaviour
 
     public void MoveCame()
     {
-        UpdateData();
+        UpdateData();//
         animator.SetInteger("ChangeAnim", 1);
     }
 }

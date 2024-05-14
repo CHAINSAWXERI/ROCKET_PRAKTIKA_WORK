@@ -12,28 +12,28 @@ public class Boostrapper : MonoBehaviour
     [SerializeField] public List<CharacterData> eventCharacterDatas = new List<CharacterData>();
     [SerializeField] public List<string> Names = new List<string>();
     [SerializeField] public List<string> Surnames = new List<string>();
-    private void Start()
+    void Awake()
     {
         _crewmember.text_replica = text_replica;
         _crewmember.rocket = rocket;
-        for (int i = 0; i < characterDatas.Count; i++)
+        foreach (var data in characterDatas)
         {
-            _crewmember.characterDatas.Add(characterDatas[i]);
+            _crewmember.characterDatas.Add(data);
         }
 
-        for (int i = 0; i < characterDatas.Count; i++)
+        foreach (var data in eventCharacterDatas)
         {
-            _crewmember.eventCharacterDatas.Add(eventCharacterDatas[i]);
+            _crewmember.eventCharacterDatas.Add(data);
         }
 
-        for (int i = 0; i < Names.Count; i++)
+        foreach (var name in Names)
         {
-            _crewmember.Names.Add(Names[i]);
+            _crewmember.Names.Add(name);
         }
 
-        for (int i = 0; i < Surnames.Count; i++)
+        foreach (var surname in Surnames)
         {
-            _crewmember.Surnames.Add(Surnames[i]);
+            _crewmember.Surnames.Add(surname);
         }
     }
 }
