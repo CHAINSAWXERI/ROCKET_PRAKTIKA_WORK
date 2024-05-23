@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SetActiveWithDelay : MonoBehaviour
+namespace SetActiveWithDelaySystem
 {
-    [SerializeField] private GameObject ObjectWithDelay;
-    public void SetActiveDelay(float delay)
+    public class SetActiveWithDelay : MonoBehaviour
     {
-        Invoke("Delay", delay);
-    }
+        [SerializeField] private GameObject ObjectWithDelay;
+        public void SetActiveDelay(float delay)
+        {
+            Invoke("Delay", delay);
+        }
 
-    private void Delay()
-    {
-        ObjectWithDelay.SetActive(true);
+        private void Delay()
+        {
+            ObjectWithDelay.SetActive(true);
+        }
     }
 }

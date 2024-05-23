@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+namespace Core
 {
-    public void NewScene(int SceneNumber)
+    public class ChangeScene : MonoBehaviour
     {
-        SceneManager.LoadScene(SceneNumber);
-    }
+        public void NewScene(int SceneNumber)
+        {
+            SceneManager.LoadScene(SceneNumber);
+        }
 
+    }
 }

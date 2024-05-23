@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0957ae0f4b790f4babb18f2f4a236fe, type: 3}
   m_Name: Owner of a charitable foundation
   m_EditorClassIdentifier: 
-  replica: "\u0412\u043C\u0435\u0441\u0442\u0435 \u043C\u044B \u043F\u043E\u043C\u043E\u0436\u0435\u043C
+  <replica>k__BackingField: "\u0412\u043C\u0435\u0441\u0442\u0435 \u043C\u044B \u043F\u043E\u043C\u043E\u0436\u0435\u043C
     \u0432\u0441\u0435\u043C, \u043F\u0440\u0430\u0432\u0434\u0430 \u0434\u043B\u044F
     \u044D\u0442\u043E\u0433\u043E \u043D\u0443\u0436\u043D\u043E \u0431\u0443\u0434\u0435\u0442
     \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0434\u0435\u043D\u0435\u0433 \u0438\u0437
     \u043A\u0430\u0437\u043D\u044B"
-  sprite: {fileID: 21300000, guid: 3444b5dca31bfde4ea67f8ac479b38bd, type: 3}
-  Intelligence: 0
-  Power: 10
-  Culture: 30
-  Money: -30
+  <Intelligence>k__BackingField: 0
+  <Power>k__BackingField: 10
+  <Culture>k__BackingField: 30
+  <Money>k__BackingField: -30

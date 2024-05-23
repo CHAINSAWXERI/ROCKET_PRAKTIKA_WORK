@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0957ae0f4b790f4babb18f2f4a236fe, type: 3}
   m_Name: Fashion designer
   m_EditorClassIdentifier: 
-  replica: "\u0421\u043E \u043C\u043D\u043E\u0439 \u043B\u044E\u0434\u0438 \u0431\u0443\u0434\u0443\u0442
-    \u043A\u0440\u0430\u0441\u0438\u0432\u043E \u043E\u0434\u0435\u0432\u0430\u0442\u044C\u0441\u044F,
+  <replica>k__BackingField: "\u0421\u043E \u043C\u043D\u043E\u0439 \u043B\u044E\u0434\u0438
+    \u0431\u0443\u0434\u0443\u0442 \u043A\u0440\u0430\u0441\u0438\u0432\u043E \u043E\u0434\u0435\u0432\u0430\u0442\u044C\u0441\u044F,
     \u0430 \u043D\u0435 \u0445\u043E\u0434\u0438\u0442\u044C \u0432 \u043B\u043E\u0445\u043C\u043E\u0442\u044C\u044F\u0445"
-  sprite: {fileID: 21300000, guid: 50d98823c990de44490e9cd30c59bb1d, type: 3}
-  Intelligence: 0
-  Power: 0
-  Culture: 30
-  Money: -10
+  <Intelligence>k__BackingField: 0
+  <Power>k__BackingField: 0
+  <Culture>k__BackingField: 30
+  <Money>k__BackingField: -10
