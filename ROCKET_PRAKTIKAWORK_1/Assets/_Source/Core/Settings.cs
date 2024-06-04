@@ -10,8 +10,6 @@ public class Settings : MonoBehaviour
 
     void Start()
     {
-        audioSetings.SoundPlayed = true;
-        audioSetings.MusicPlayed = true;
         UpdateSettings();
     }
 
