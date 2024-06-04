@@ -13,36 +13,21 @@ public class Settings : MonoBehaviour
         UpdateSettings();
     }
 
-    public void SetActiveMusic(bool Value)
+    public void SetNewValueMusic(float Value)
     {
-        audioSetings.MusicPlayed = Value;
+        audioSetings.MusicPlayedValue = Value;
         UpdateSettings();
     }
 
-    public void SetActiveSound(bool Value)
+    public void SetNewValueSound(float Value)
     {
-        audioSetings.SoundPlayed = Value;
+        audioSetings.SoundPlayedValue = Value;
         UpdateSettings();
     }
 
     private void UpdateSettings()
     {
-        if (audioSetings.SoundPlayed == false)
-        {
-            SoundPlayer.volume = 0f;
-        }
-        else
-        {
-            SoundPlayer.volume = 1f;
-        }
-
-        if (audioSetings.MusicPlayed == false)
-        {
-            MusicPlayer.volume = 0f;
-        }
-        else
-        {
-            MusicPlayer.volume = 1f;
-        }
+        SoundPlayer.volume = audioSetings.SoundPlayedValue;
+        MusicPlayer.volume = audioSetings.MusicPlayedValue;
     }
 }
